@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <link href="./assets/css/jquery.readall.min.css" rel="stylesheet"/>
+    <script src="./assets/js/jquery.readall.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- #MAIN -->
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Denys Kharitesku"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Denys Kharitesku">Denys Kharitesku</h1>
+
+            <p class="title">.NET & React Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:deniskharitesku@gmail.com" class="contact-link"
+                  >deniskharitesku@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+380954135792" class="contact-link"
+                  >+380 95 413 57 92</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Chernivtsi, Ukraine</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Diligent full-stack developer with a robust 3-year background specializing in the 
+              creation of dynamic web applications. Proficient in navigating diverse back-end and 
+              front-end frameworks, with a consistent preference for the .NET ecosystem and React.
+            </p>
+            <p>
+              Currently engaged in freelance work while concurrently advancing my expertise through 
+              personal projects and university studies. My approach as a developer is grounded in a 
+              commitment to uphold clean code practices and adhere to SOLID principles, ensuring the 
+              optimal quality of my projects. I am well-versed in various architectural paradigms, 
+              including N-Tier Architecture and Clean Architecture.
+            </p>
+            <p>
+              My journey has included meaningful exposure to a range of technologies, encompassing
+              NoSQL databases such as MongoDB and Redis, as well as relational databases including 
+              MS SQL, MySQL, PostgreSQL, and SQLite. My proficiency extends to encompass 
+              microservices, message brokers, RPC (Remote Procedure Call), caching, and logging, 
+              contributing to a well-rounded skill set.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites, services, WebAPIs, etc.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Flutter mobile applications development.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX design</h4>
+
+                  <p class="service-item-text">
+                    Amateur design for web and mobile.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>  
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Yuriy Fedkovych Chernivtsi National University
+                </h4>
+
+                <span>2020 — Present</span>
+
+                <p class="timeline-text">
+                  Bachelors Degree in Computer Science
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">English gymnasium #7, Chernivtsi, Ukraine</h4>
+
+                <span>2009 — 2020</span>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Full-stack Developer, OneQ - courses platform</h4>
+
+                <span>Jun 2023 — Aug 2023</span>
+
+                <p class="timeline-text">
+                  I used to perform different tasks:
+                  <ul class="timeline-sub-list">
+                    <li>
+                      Developed a server-side application from the ground up, utilizing .NET Core, 
+                      Entity Framework Core, and a PostgreSQL database. 
+                    </li>
+                    <li>
+                      Crafted robust business logic to meet specific operational requirements.
+                    </li>
+                    <li>
+                      Integrated Firebase Authentication to establish secure user access. Implemented 
+                      comprehensive authorization rules and scenarios, performed validation of JWT 
+                      tokens.
+                    </li>
+                    <li>
+                      Enhanced an API to handle incoming requests from a Telegram webhook. Created a 
+                      Telegram bot, built navigation, and prepared response logic. Also provided 
+                      content access control based on user subscription.
+                    </li>
+                    <li>
+                      Built a client-side app with React and Typescript. Used Tailwind as a style 
+                      scheme.
+                    </li>    
+                    <li>
+                      Prepared both applications for deployment, ensuring they were ready for the 
+                      production environment.
+                    </li>
+                  </ul>
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Freelancer</h4>
+
+                <span>2020 — Jun, 2023</span>
+
+                <p class="timeline-text">
+                  I used to perform different tasks:
+                  <ul class="timeline-sub-list">
+                    <li>
+                    .NET back-end. Mostly I was hired to debug some issues. But sometimes it 
+                    was also necessary to add new features to the existing projects, and for that, 
+                    I needed to add new endpoints, services, repositories, etc. 
+                    </li>
+                    <li>
+                    React front-end. The tasks involved adding new pages to the existing applications, 
+                    integrating payment systems(eg. LiqPay, EasyPay) and updating the authorization 
+                    scenarios, in some cases by adding the FirebaseAuth.
+                    </li>
+                    <li>
+                    UI/UX. I used to create UI/UX designs for web and mobile applications, based on 
+                    customer's requirements.
+                    </li>                
+                  </ul>
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C#, .NET</h5>
+                  <data value="100">100%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MSSQL, PostgreSQL</h5>
+                  <data value="95">95%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML & CSS, SASS</h5>
+                  <data value="100">100%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TypeScript</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Xunit</h5>
+                  <data value="95">95%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Docker</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Figma, Adobe Photoshop</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+      <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-content">
+              <div class="carousel">
+              </div>
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <time data-modal-time></time>
+              <div data-modal-text>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="project-list">
+              <!-- <li class="project-item active" imagesFolder="ReserveRover" imagesNum=11>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/ReserveRover/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">OneQ</h3>
+                  <p class="project-category">.NET Core + React</p>
+                </a>
+                <div class="project-description" time="17 June, 2023">
+                  <p>
+                    The application in general is a courses platform. The system has 4 user roles, 
+                    admin, moderator, mentor(teacher) and student. Each role has its own capailities 
+                    and access level.
+                  </p><br/>
+                  <p>
+                    The product-owners wanted it to be just a Telegram bot, but I had to explain them 
+                    that such aproach is not an optimal choice for them. So we came up with a decision to make 
+                    only a 'student' part as a Telegram bot, because it is crossplatform, available in 
+                    mobile and doesn't require additional authorization. Using this bot, the potential 
+                    student is able to overview the available courses, read their descriptions, 
+                    courses thumbnails. After picking the desired course, the user can buy the 
+                    subscription to a suitable tariff plan. After successfull payment, user recieves 
+                    new message that subscription was successfully purchased. After that user has to 
+                    wait until the course stream beguns, as before that system won't let user access 
+                    the content.
+                  </p><br/>
+                  <p>
+                    The course mentors(teachers) have ability to interact with mentor panel, in a form 
+                    of web pages. The mentor panel gives mentor abilty to edit the course, add lessons, 
+                    remove lessons, change lessons order. Edit course's description, thumbnail, etc.
+                    Also mentor can manage the course's setreams and tariff plans, add/remove/edit them.
+                  </p><br/>
+                  <p>
+                    Moderator users possess the capability to add new courses to the platform, view 
+                    its details, assign/expel mentor-users to/from the courses, change courses 
+                    moderation statuses. 
+                  </p><br/>
+                  <p>
+                    The admin user inherits all the moderator functionalities, and additionally gains
+                    the ability to perform CRUD operations on the database, as well as manage application users.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/ReserveRoverAPI" target=”_blank”>
+                    Backend repository
+                  </a>
+                  <a href="https://github.com/denisko28/ReserveRoverClient" target=”_blank”>
+                    Frontend repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    .NET, REST API, Jwt Tokens, Firebase Auth, Firbase Cloud Storage,
+                    Entity Framework, Automapper, PostgreSQL, React, Typescript, Redux toolkit, Tailwind, Flowbite.
+                  </mark><br/>
+                </div>
+              </li> -->
+              
+              <li class="project-item active" imagesFolder="ReserveRover" imagesNum=11>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/ReserveRover/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Reserve Rover</h3>
+                  <p class="project-category">.NET Core + React</p>
+                </a>
+                <div class="project-description" time="17 June, 2023">
+                  <p>
+                    This application was created as a University project. The backend has been 
+                    developed using C# and the .NET Core Framework, while the frontend utilizes 
+                    Typescript and React.
+                  </p><br/>
+                  <p>
+                    In general it is a system for tables booking. It encompasses 5 distinct user roles: 
+                    guest, client, manager, moderator, and admin. These user roles are extracted from 
+                    the JWT token claims.
+                  </p><br/>
+                  <p>
+                    The potential partners have the option to add their restaurants or cafes to the 
+                    system, making them available for booking. Place managers/owners can specify the
+                    name of the establishment, provide descriptions, upload images, and more. Once
+                    all the necessary information has been provided, the request enters a moderation
+                    phase.
+                  </p><br/>
+                  <p>
+                    The process for a user looking to book a table differs slightly. Initially, the
+                    user needs to select a location and can optionally enter search keywords or the
+                    place name. Subsequently, users can sort and filter the search results to their
+                    preference.
+                  </p><br/>
+                  <p>
+                    Moderator users possess the capability to view moderation requests along with all 
+                    the place details and can modify the status of these requests.
+                  </p><br/>
+                  <p>
+                    The admin user inherits all the moderator functionalities, and additionally gains
+                    the ability to perform CRUD operations on the database, as well as manage application users.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/ReserveRoverAPI" target=”_blank”>
+                    Backend repository
+                  </a>
+                  <a href="https://github.com/denisko28/ReserveRoverClient" target=”_blank”>
+                    Frontend repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    .NET, REST API, Jwt Tokens, Firebase Auth, Firbase Cloud Storage,
+                    Entity Framework, Automapper, PostgreSQL, React, Typescript, Redux toolkit, Tailwind, Flowbite.
+                  </mark><br/>
+                </div>
+              </li>
+
+              <li class="project-item active" imagesFolder="Barbershop" imagesNum=6>
+                <a href="#1">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Barbershop/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Barbershop CRM</h3>
+                  <p class="project-category">.NET Core + React (with microservices)</p>
+                </a>
+                <div class="project-description" time="17 June, 2021">
+                  <p>
+                    An application created as a university project. The backend is developed using C#
+                    and the .NET Core Framework, implementing a microservices architecture. The 
+                    frontend is built with React JS and utilizes the Bootstrap toolkit.
+                  </p><br/>
+                  <p>
+                    The application serves as a CRM system for a chain of barbershops. It empowers 
+                    users to select a barbershop from a list, choose desired services, select a barber, 
+                    and schedule an appointment.
+                  </p><br/>
+                  <p>
+                    Barbers possess the capability to view their appointments, create new appointments,
+                    and modify appointment statuses.
+                  </p><br/>
+                  <p>
+                    Managers are associated with specific branches and have the authority to modify 
+                    branch information, manage barbers within their branch, and oversee all 
+                    appointments made within the branch.
+                  </p><br/>
+                  <p>
+                    Administrators hold control over the entire system, with access to all branches. 
+                    They can rename branches, update prices, add new services, create new branches, 
+                    and manage user accounts.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/MultipleAPIs/tree/master" target=”_blank”>
+                    Backend repository
+                  </a>
+                  <a href="https://github.com/denisko28/BarbershopLondonClient/tree/master" target=”_blank”>
+                    Frontend repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    .NET, React, Bootstrap, REST API, XUnit, Jwt Tokens, Microservices, RabbitMQ, 
+                    MassTransit, gRPC, Ocelot, Entity Framework, Fluent Validation, Automapper, 
+                    Serilog, Elastic Search, Kibana, Polly, SQL Server, MongoDB, Redis, Docker, K8S.
+                  </mark><br/>
+                </div>
+              </li>
+              
+              <li class="project-item active" imagesFolder="NanoReminder" imagesNum=3>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/NanoReminder/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Nano Reminder</h3>
+                  <p class="project-category">Flutter</p>
+                </a>
+                <div class="project-description" time="17 June, 2021">
+                  <p>
+                    Introducing an app born out of a hobby project: its primary function revolves 
+                    around reminding users of their pending tasks. However, this isn't your typical 
+                    TODO app, it comes with an added dimension. This app empowers users to schedule 
+                    recurring tasks at specific time intervals.
+                  </p><br/>
+                  <p>
+                    One standout feature is its location-based reminder system. Users can define tasks
+                    tied to particular places and set a radius. The app then leverages the user's
+                    location, sending notifications upon entry or exit from the designated area.
+                  </p><br/>
+                  <p>
+                    Furthermore, a distinctive approach was employed to ensure users never overlook 
+                    essential tasks. Notifications are designed to be persistent, resurfacing until
+                    the user either marks the task as 'Done' or defers it.
+                  </p><br/>
+                  <p>
+                    This app amalgamates practicality and innovation, proving to be more than just a 
+                    run-of-the-mill task manager.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/NanoReminder/tree/master" target=”_blank”>
+                    Project repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    Flutter, Swift, Local notifications, Flutter Method Channel,
+                    Intl, BLOC, Injectanle, Google maps, Google place, 
+                    Google geocoding, Google Ads, SQLite.
+                  </mark><br/>
+                </div>
+              </li>
+              
+              <li class="project-item active" imagesFolder="NeuroTuner" imagesNum=4>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/NeuroTuner/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Neuro Tuner</h3>
+                  <p class="project-category">Java + React</p>
+                </a>
+                <div class="project-description" time="17 June, 2021">
+                  <p>
+                    Developed as a university project, this application comprises a backend implemented 
+                    in Java, utilizing the Spring Boot framework, while the frontend is built using 
+                    React JS with the Bootstrap toolkit.
+                  </p><br/>
+                  <p>
+                    The application empowers users to design and configure neural networks, offering 
+                    the capability to both train and test these networks. Notably, the application is 
+                    entirely self-contained, devoid of any reliance on external libraries or packages, 
+                    as it has been built entirely from the ground up.
+                  </p><br/>
+                  <p>
+                    Prior to initiating the training phase, users have the opportunity to architect the 
+                    neural network to their specifications, determining the number of layers and neurons 
+                    within each layer. Following this, users can input the desired training parameters
+                    and observe the error size reduction on the dedicated diagram. 
+                    As a next step, the user can test the network on test data and see the average 
+                    error size of the predictions.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/neuro-tuner/tree/main" target=”_blank”>
+                    Project repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    Java, Spring Boot, REST API, React, Bootstrap.
+                  </mark><br/>
+                </div>
+              </li>
+              
+              <li class="project-item active" imagesFolder="PixelLamp" imagesNum=2>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/PixelLamp/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Pixel Lamp</h3>
+                  <p class="project-category">HTML, JS, CSS + embeded C++ (ESP8266)</p>
+                </a>
+                <div class="project-description" time="17 June, 2021">
+                  <p>
+                    It is more than just an application; it's a complete device. The device is built 
+                    around the ESP8266 module, which features an integrated WiFi module. Furthermore, 
+                    a web client was developed to interact with this device. Using the web client, 
+                    users can draw pixel art in real-time and view the results on the LED matrix. 
+                    The device also supports animations; users can easily select their desired 
+                    animation from a list.
+                  </p><br/>
+                  <p>
+                    I specially designed and assembled a PCB to house all the necessary hardware 
+                    components. Additionally, I crafted the LED matrix myself from an addressable LED 
+                    strip.
+                  </p><br/>
+                  <p>
+                    Upon assembling the device, I developed firmware for the ESP8266 microcontroller. 
+                    The code was written in C++ and leveraged external libraries for controlling the 
+                    LED strip and implementing WiFi capabilities. The device is capable of processing 
+                    HTTP requests (like a server), and executes corresponding actions on the
+                    hardware in response.
+                  </p><br/>
+                  <p>
+                    The final step involved creating a web client to transmit requests. Since the 
+                    required functionality wasn't overly complex, I decided to construct it using HTML, 
+                    CSS, and JS, without relying on additional frameworks.
+                  </p><br/>
+                  <p>
+                    The end result is a fully functional device, successfully implementing all the 
+                    initially planned features.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/neuro-tuner/tree/main" target=”_blank”>
+                    Project repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    HTML, JS, CSS, embeded C++, FastLED.
+                  </mark><br/>
+                </div>
+              </li>
+              
+              <li class="project-item active" imagesFolder="SolarMonitor" imagesNum=3>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/SolarMonitor/1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Solar Monitor</h3>
+                  <p class="project-category">HTML, JS, CSS + embeded C/C++ (STM32, ESP8266)</p>
+                </a>
+                <div class="project-description" time="17 June, 2021">
+                  <p>
+                    The purpose of this project was to create a device designed to gather statistics on 
+                    solar power generation from solar panels. This device establishes communication 
+                    with a Schneider solar inverter through the RS485 port. The core of the device 
+                    revolves around the STM32 microcontroller, which collaborates with the ESP8266, 
+                    functioning as a WiFi module.
+                  </p><br/>
+                  <p>
+                    I developed firmware for the STM32 microcontroller, it shows data on the LCD screen, 
+                    allows user to navigate through menu and sends requests to the inverter every hour 
+                    in order to collect fresh data. Once the data is received, the STM32 sends 
+                    a message to the ESP8266 via the UART bus. I also wrote firmware for the ESP8266 
+                    module, enabling it to receive messages from the STM32 and forward them to my 
+                    server. On the server side, I utilized PHP and a MySQL database.
+                  </p><br/>
+                  <p>
+                    In addition, a web client has been created to visually represent the statistics on 
+                    a diagram. Users have the ability to select their desired time period and observe 
+                    the generated power statistics.
+                  </p><br/>
+                  <a href="https://github.com/denisko28/SolarMonitorMasterSTM32" target=”_blank”>
+                    STM32 firmware repository
+                  </a>
+                  <a href="https://github.com/denisko28/SolarMonitorArduinoParts" target=”_blank”>
+                    ESP8266 firmware repository
+                  </a>
+                  <a href="https://github.com/denisko28/SolarMonitorWeb" target=”_blank”>
+                    Web app repository
+                  </a><br/>
+                  <mark>
+                    <b>Tech. stack used in project:</b><br/>
+                    HTML, JS, CSS, PHP, MySQL, embeded C, embeded C++.
+                  </mark><br/>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
